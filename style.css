@@ -1,0 +1,478 @@
+/* CSS RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MOBILE STYLES */
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+  text-align: left;
+  color: #333333;
+}
+
+.wrapper {
+  width: 90vw;
+  margin: 32px auto;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.description-container {
+  display: flex;
+}
+
+.heading-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  margin-left: 12px;
+}
+
+.img-container {
+  width: 90vw;
+  margin-top: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.container-wrapper {
+  display: grid;
+}
+
+.recipe-time-container {
+  margin-top: 24px;
+}
+
+.recipe-title {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bdbdbd;
+}
+
+.recipe-icon {
+  font-size: 20px;
+}
+
+.details-container {
+  margin-left: 6px;
+}
+
+.details {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+
+.yields {
+  display: flex;
+}
+
+.other-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.prep_time,
+.cook_time,
+.total_time {
+  display: flex;
+}
+
+/* grid layout */
+.recipe-time-container {
+  grid-area: recipe;
+}
+
+.ingredients-container {
+  grid-area: ingredients;
+}
+
+.container-wrapper {
+  grid-template-areas:
+    "recipe"
+    "ingredients";
+}
+
+/* Ingredients */
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.sub-title {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.recipe-steps-container {
+  margin-bottom: 42px;
+}
+
+.recipe-step {
+  display: flex;
+}
+
+.steps {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.step-icon {
+  color: #808080;
+}
+
+.bolder {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.italic {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.instruction-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.step-icon {
+  color: #f2994a;
+}
+
+.steps {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.source {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bdbdbd;
+  margin-top: 26px;
+}
+
+footer {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 24px;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 926px;
+    margin: 52px auto;
+  }
+  .img-container {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .heading {
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  .heading-description {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .container-wrapper {
+    grid-template-areas: "ingredients recipe";
+  }
+
+  .other-details {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 0;
+  }
+
+  .recipe-time-container {
+    margin-top: 0;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    padding: 50px;
+    height: max-content;
+  }
+
+  .recipe-title {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .details {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cook_time,
+  .total_time {
+    margin-top: 42px;
+  }
+
+  .title {
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .sub-title {
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .steps {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 20px;
+    color: #333333;
+  }
+
+  .bolder {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .italic {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .ins-steps {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .ingredients-container,
+  .instuctions-container {
+    width: 70%;
+  }
+}
